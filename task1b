@@ -1,0 +1,1 @@
+cut -d':' -f2 < passwd_file.txt | sort | uniq -d
