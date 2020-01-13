@@ -20,6 +20,6 @@ COPY . /flask_web
 
 ENTRYPOINT [ "python" ]
 
-EXPOSE 8000
+EXPOSE 8888
 
 CMD [ "hello.py" ]
