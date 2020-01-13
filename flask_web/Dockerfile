@@ -7,7 +7,7 @@ RUN yum -y install epel-release
 RUN yum -y install python-pip python; yum clean all
 
 # We copy just the requirements.txt first to leverage Docker cache
-COPY ./requirements.txt /root/flask_web/requirements.txt
+COPY ./requirements.txt /flask_web/requirements.txt
 
 WORKDIR /flask_web
 
@@ -15,7 +15,7 @@ WORKDIR /flask_web
 RUN pip install --upgrade pip
 
 # Pip install the requirements for Dockerfile
-RUN pip install flask 
+RUN pip install -r /flask_web/requirements.txt
 COPY . /flask_web
 
 ENTRYPOINT [ "python" ]
