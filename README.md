@@ -74,10 +74,13 @@ echo "Notice: Full Deployment steps done. Deployment (2 Replica), Service (HTTP)
 ```
 External IP address of the application. (Container Port:8888, External Ports:80,443)
 -----
-kubectl get service alimurat-hello-app
-http://34.107.203.111/
-http://34.107.203.111/status
+| URL | Description | Check command |
+|----------|-------------|-------------|
+| http://34.76.16.230 | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get service alimurat-hello-app |
+| http://34.76.16.230/status | /status : Returns “HTTP 204” without any content. | kubectl get service alimurat-hello-app |
 
-kubectl get ingress ingress-alimurat-hello-app
-https://34.107.203.111/
-https://34.107.203.111/status
+| http://34.107.203.111/status | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app|
+| http://34.107.203.111/status | /status : Returns “HTTP 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
+
+| https://34.107.203.111/ | / : Returns “HTTPS 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app |
+| https://34.107.203.111/status | /status : Returns “HTTPS 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
