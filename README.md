@@ -1,13 +1,14 @@
 Task 1
-------------------------------------------------------------------------------------------------------
+=========
 >  [task1a.py](https://github.com/alimuratunsal/tasks/blob/master/task1a.py) 
 
 ------------------------------------------------------------------------------------------------------
-[task1b] (https://github.com/alimuratunsal/tasks/blob/master/task1b)
+[task1b](https://github.com/alimuratunsal/tasks/blob/master/task1b)
 ```bash
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
-```
-passwd_file.txt	password file
+
+------------------------------------------------------------------------------------------------------```
+[passwd_file.txt](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
 
 ------------------------------------------------------------------------------------------------------
 Task 2 
