@@ -8,7 +8,7 @@ fulldeployment.sh
 deployment.yaml	
 ingress-service.yaml	
 service.yaml	
---
+
 flask_web folder
 ->Dockerfile
 ->hello.py	flask_web
