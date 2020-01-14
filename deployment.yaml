@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alimurat-hello-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: alimurat-hello-app
+  template:
+    metadata:
+      labels:
+        app: alimurat-hello-app
+    spec:
+      containers:
+      - name: alimurat-hello-app
+        image: eu.gcr.io/custom-helix-264820/hellotask:v1.0.0
+        ports:
+        - containerPort: 8888

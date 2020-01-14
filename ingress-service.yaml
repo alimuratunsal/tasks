@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-alimurat-hello-app
+spec:
+  tls:
+  - secretName: my-first-secret
+  backend:
+    serviceName: alimurat-hello-app
+    servicePort: 80
