@@ -11,7 +11,7 @@ $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
 [passwd_file.txt](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
 
 ------------------------------------------------------------------------------------------------------
-Task 2 -Basic Flask App Deployment
+Task 2 - Basic Flask App Deployment
 =========
 Task 2 Contains: 
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) , [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh), [deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) , [service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml), [ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
@@ -49,7 +49,7 @@ Notice 2: Deployment (Replica Set=2), Service (HTTP) and Ingress (HTTPS) steps t
 ---
   
 
- You can also see the details of fulldeployment.sh scripts details below.
+ You can also see the details of [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh) scripts details below.
 --
  ```
 #!/bin/bash
