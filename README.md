@@ -2,6 +2,7 @@ Task 1
 =========
 Task 1 Contains: 
 [task1a.py](https://github.com/alimuratunsal/tasks/blob/master/task1a.py) 
+
 [task1b](https://github.com/alimuratunsal/tasks/blob/master/task1b)
 ```bash
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
