@@ -1,6 +1,6 @@
 Task 1
 ------------------------------------------------------------------------------------------------------
-[task1a.py]	(https://github.com/alimuratunsal/tasks/blob/master/task1a.py)
+> [task1a.py]	(https://github.com/alimuratunsal/tasks/blob/master/task1a.py)
 
 ------------------------------------------------------------------------------------------------------
 [task1b] (https://github.com/alimuratunsal/tasks/blob/master/task1b)
