@@ -26,16 +26,20 @@ or you can run yaml files respectively.
   2.service.yaml
   3.ingress-service.yaml
   ```
-You can also see the details of fulldeployment.sh scripts details below.
---
-Notice: Deployment (2 Replica), Service (HTTP) and Ingress (HTTPS) steps take 2-3 minutes to run fully. Deployment and Service (http url) start in 1 minute, while Ingress (https url) starts in approximately 6-7 minutes. In fulldeployment.sh you can check the status of the steps with the commands I wrote as comments.
-
-  Also you have to create a secret (my-first-secret) to run ingress-service.yaml 
+---
+Notice1:Also you have to create a secret (my-first-secret) to run ingress-service.yaml 
   ```
   spec:
   tls:
   - secretName: my-first-secret
   ```
+---
+Notice2: Deployment (2 Replica), Service (HTTP) and Ingress (HTTPS) steps take 2-3 minutes to run fully. Deployment and Service (http url) start in 1 minute, while Ingress (https url) starts in approximately 6-7 minutes. In fulldeployment.sh you can check the status of the steps with the commands I wrote as comments.
+---
+  
+
+ You can also see the details of fulldeployment.sh scripts details below.
+--
  ```
 #!/bin/bash
 echo "Deploying Python flask application (alimurat-hello-app)"
