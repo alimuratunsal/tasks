@@ -1,16 +1,16 @@
-Task 1 ---------->
+Task 1 --->
 task1a.py	
 task1b
 passwd_file.txt	password file
 ------------------------------------------------------------------------------------------------------
-Task 2 ---------->
+Task 2 --->
 fulldeployment.sh
 deployment.yaml	
 ingress-service.yaml	
 service.yaml
 flask_web folder
 ------------------------------------------------------------------------------------------------------
-flask_web folder (Task 2) ---------->
+flask_web folder (Task 2) --->
 ->Dockerfile
 ->hello.py	flask_web
 ->requirements.txt
