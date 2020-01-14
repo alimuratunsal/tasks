@@ -8,24 +8,25 @@ Task 1
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
 ```
 ------------------------------------------------------------------------------------------------------
-[passwd_file](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
+[passwd_file.txt](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
 
 ------------------------------------------------------------------------------------------------------
 
 Task 2
 =========
-Task 2 Contains;[flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) , [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh), [deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) , [service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml), [ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
+Task 2 Contains; 
+[flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) , [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh), [deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) , [service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml), [ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
 
 ------------------------------------------------------------------------------------------------------
 
-flask_web folder (Task 2) 
-->Dockerfile
-->hello.py	flask_web
-->requirements.txt
+flask_web folder contains: 
+-> [Dockerfile](https://github.com/alimuratunsal/tasks/blob/master/flask_web/Dockerfile) 
+-> [hello.py](https://github.com/alimuratunsal/tasks/blob/master/flask_web/hello.py) 
+-> [requirements.txt](https://github.com/alimuratunsal/tasks/blob/master/flask_web/requirements.txt) 
 
 ------------------------------------------------------------------------------------------------------
 Hi!
-In task 2, If you want to fully automatic deployment on k8s cluster, just run fulldeployment.sh after the git clone command.
+In Task 2, If you want to fully automatic deployment on k8s cluster, just run [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh) after the git clone command.
   ```
   $ sh fulldeployment.sh
   ```
