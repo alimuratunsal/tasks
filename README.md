@@ -74,11 +74,11 @@ echo "Notice: Full Deployment steps done. Deployment (2 Replica), Service (HTTP)
 ```
 External IP address of the application. (Container Port:8888, External Ports:80,443)
 -----
-| URL | Description | Check command |
-|----------|-------------|-------------|
-| http://34.76.16.230 | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get service alimurat-hello-app |
-| http://34.76.16.230/status | /status : Returns “HTTP 204” without any content. | kubectl get service alimurat-hello-app |
-| http://34.107.203.111/status | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app|
-| http://34.107.203.111/status | /status : Returns “HTTP 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
-| https://34.107.203.111/ | / : Returns “HTTPS 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app |
-| https://34.107.203.111/status | /status : Returns “HTTPS 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
+| URL | Yaml File | Description | Check command |
+|----------|-------------|-------------|-------------|
+| http://34.76.16.230 | service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get service alimurat-hello-app |
+| http://34.76.16.230/status | service.yaml| /status : Returns “HTTP 204” without any content. | kubectl get service alimurat-hello-app |
+| http://34.107.203.111/status | ingress-service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app|
+| http://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTP 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
+| https://34.107.203.111/ | ingress-service.yaml | / : Returns “HTTPS 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app |
+| https://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTPS 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
