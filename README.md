@@ -27,7 +27,9 @@ or you can run yaml files respectively.
   3.ingress-service.yaml
   ```
 ---
-Notice 1: Also you have to create a secret (my-first-secret) to run ingress-service.yaml (Please see ingress-service.yaml). Run the following commands respectively.
+Notice 1: Also you have to create a secret (my-first-secret) to run ingress-service.yaml (Please see ingress-service.yaml).
+---
+Run the following commands respectively.
 ---
   ```
   openssl genrsa -out example.key 2048
