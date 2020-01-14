@@ -16,7 +16,7 @@ Task 2 Contains:
 
 ------------------------------------------------------------------------------------------------------
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) Contains: 
--> [Dockerfile](https://github.com/alimuratunsal/tasks/blob/master/flask_web/Dockerfile), [hello.py](https://github.com/alimuratunsal/tasks/blob/master/flask_web/hello.py), [requirements.txt](https://github.com/alimuratunsal/tasks/blob/master/flask_web/requirements.txt) 
+[Dockerfile](https://github.com/alimuratunsal/tasks/blob/master/flask_web/Dockerfile), [hello.py](https://github.com/alimuratunsal/tasks/blob/master/flask_web/hello.py), [requirements.txt](https://github.com/alimuratunsal/tasks/blob/master/flask_web/requirements.txt) 
 
 ------------------------------------------------------------------------------------------------------
 Hi!
