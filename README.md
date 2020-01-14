@@ -16,15 +16,15 @@ flask_web folder (Task 2) --->
 ->requirements.txt
 ------------------------------------------------------------------------------------------------------
 Hi!
-In task 2, If you want to fully automatic deployment just run fulldeployment.sh after the git clone command.
+In task 2, If you want to fully automatic deployment on k8s cluster, just run fulldeployment.sh after the git clone command.
   ```
   sh fulldeployment.sh
   ```
-or you can run yaml files respectively.
+or you can apply yaml files respectively.
   ```
-  1.deployment.yaml
-  2.service.yaml
-  3.ingress-service.yaml
+  kubectl apply -f deployment.yaml
+  kubectl apply -f service.yaml
+  kubectl apply -f ingress-service.yaml
   ```
 ---
 Notice 1: Also you have to create a secret (my-first-secret) to run ingress-service.yaml (Please see ingress-service.yaml).
