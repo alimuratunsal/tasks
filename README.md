@@ -1,6 +1,9 @@
 Task 1 --->
 task1a.py	
 task1b
+```bash
+$ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
+```
 passwd_file.txt	password file
 ------------------------------------------------------------------------------------------------------
 Task 2 --->
