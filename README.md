@@ -55,6 +55,7 @@ kubectl apply -f ingress-service.yaml
 echo "Notice: Full Deployment steps done. Deployment (2 Replica), Service (HTTP) and Ingress (HTTPS) steps take 2-3 minutes to run fully. Deployment and Service (http url) start in 1 minute, while Ingress (https url) starts in approximately 6-7 minutes. In fulldeployment.sh you can check the status of the steps with the commands I wrote as comments. "
 ```
 External IP address of the application.
+-----
 kubectl get service
 http://34.107.203.111/
 http://34.107.203.111/status
