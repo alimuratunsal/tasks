@@ -56,10 +56,10 @@ echo "Notice: Full Deployment steps done. Deployment (2 Replica), Service (HTTP)
 ```
 External IP address of the application.
 -----
-kubectl get service
+kubectl get service alimurat-hello-app
 http://34.107.203.111/
 http://34.107.203.111/status
 
-kubectl get ingress
+kubectl get ingress ingress-alimurat-hello-app
 https://34.107.203.111/
 https://34.107.203.111/status
