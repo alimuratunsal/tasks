@@ -27,14 +27,17 @@ or you can run yaml files respectively.
   3.ingress-service.yaml
   ```
 ---
-Notice1:Also you have to create a secret (my-first-secret) to run ingress-service.yaml 
+Notice 1: Also you have to create a secret (my-first-secret) to run ingress-service.yaml (Please see ingress-service.yaml). Run the following commands respectively.
+---
   ```
-  spec:
-  tls:
-  - secretName: my-first-secret
+  openssl genrsa -out example.key 2048
+  openssl req -new -key example.key -out example.csr
+  openssl x509 -req -days 365 -in example.csr -signkey example.key -out example.crt
+  kubectl create secret tls my-first-secret --cert example.crt --key example.key
+
   ```
 ---
-Notice2: Deployment (2 Replica), Service (HTTP) and Ingress (HTTPS) steps take 2-3 minutes to run fully. Deployment and Service (http url) start in 1 minute, while Ingress (https url) starts in approximately 6-7 minutes. In fulldeployment.sh you can check the status of the steps with the commands I wrote as comments.
+Notice 2: Deployment (2 Replica), Service (HTTP) and Ingress (HTTPS) steps take 2-3 minutes to run fully. Deployment and Service (http url) start in 1 minute, while Ingress (https url) starts in approximately 6-7 minutes. In fulldeployment.sh you can check the status of the steps with the commands I wrote as comments.
 ---
   
 
