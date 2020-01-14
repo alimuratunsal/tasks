@@ -1,9 +1,9 @@
-Task 1a
+Task 1 ---------->
 task1a.py	
 task1b
 passwd_file.txt	password file
 ------------------------------------------------------------------------------------------------------
-Task 2 Files:
+Task 2 ---------->
 fulldeployment.sh
 deployment.yaml	
 ingress-service.yaml	
