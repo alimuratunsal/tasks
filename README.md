@@ -16,13 +16,15 @@ flask_web folder
 ------------------------------------------------------------------------------------------------------
 Hi!
 In task 2, If you want to fully automatic deployment just run fulldeployment.sh after the git clone command.
-sh fulldeployment.sh
-
+  ```
+  sh fulldeployment.sh
+  ```
 or you can run yaml files respectively.
-1.deployment.yaml
-2.service.yaml
-3.ingress-service.yaml
-
+  ```
+  1.deployment.yaml
+  2.service.yaml
+  3.ingress-service.yaml
+  ```
 You can also see the details of fully
 #!/bin/bash
 echo "Deploying Python flask application (alimurat-hello-app)"
