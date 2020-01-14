@@ -74,7 +74,7 @@ echo "Notice: Full Deployment steps done. Deployment (2 Replica), Service (HTTP)
 ```
 External IP address of the application. (Container Port:8888, External Ports:80,443)
 -----
-| URL | Yaml File | Description | Check command |
+| URL | Yaml File | Description | IP:Port Check Command |
 |----------|-------------|-------------|-------------|
 | http://34.76.16.230 | service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get service alimurat-hello-app |
 | http://34.76.16.230/status | service.yaml| /status : Returns “HTTP 204” without any content. | kubectl get service alimurat-hello-app |
