@@ -15,11 +15,9 @@ Task 2 - Basic Flask App Deployment
 =========
 Task 2 Contains: 
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) , [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh), [deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) , [service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml), [ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
-
 ------------------------------------------------------------------------------------------------------
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) Contains: 
 [Dockerfile](https://github.com/alimuratunsal/tasks/blob/master/flask_web/Dockerfile), [hello.py](https://github.com/alimuratunsal/tasks/blob/master/flask_web/hello.py), [requirements.txt](https://github.com/alimuratunsal/tasks/blob/master/flask_web/requirements.txt) 
-
 ------------------------------------------------------------------------------------------------------
 Hi!
 In Task 2, If you want to fully automatic deployment on k8s cluster, just run [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh) after the git clone command.
