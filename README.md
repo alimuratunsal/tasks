@@ -29,13 +29,13 @@ flask_web folder (Task 2)
 Hi!
 In task 2, If you want to fully automatic deployment on k8s cluster, just run fulldeployment.sh after the git clone command.
   ```
-  sh fulldeployment.sh
+  $ sh fulldeployment.sh
   ```
 or you can apply yaml files respectively.
   ```
-  kubectl apply -f deployment.yaml
-  kubectl apply -f service.yaml
-  kubectl apply -f ingress-service.yaml
+  $ kubectl apply -f deployment.yaml
+  $ kubectl apply -f service.yaml
+  $ kubectl apply -f ingress-service.yaml
   ```
 ---
 Notice 1: Also you have to create a secret (my-first-secret) to run ingress-service.yaml (Please see ingress-service.yaml).
@@ -43,10 +43,10 @@ Notice 1: Also you have to create a secret (my-first-secret) to run ingress-serv
 Run the following commands respectively.
 ---
   ```
-  openssl genrsa -out example.key 2048
-  openssl req -new -key example.key -out example.csr
-  openssl x509 -req -days 365 -in example.csr -signkey example.key -out example.crt
-  kubectl create secret tls my-first-secret --cert example.crt --key example.key
+  $ openssl genrsa -out example.key 2048
+  $ openssl req -new -key example.key -out example.csr
+  $ openssl x509 -req -days 365 -in example.csr -signkey example.key -out example.crt
+  $ kubectl create secret tls my-first-secret --cert example.crt --key example.key
 
   ```
 ---
@@ -87,9 +87,9 @@ External IP address of the application. (Container Port:8888, External Ports:80,
 -----
 | URL | Yaml File | Description | IP:Port Check Command |
 |----------|-------------|-------------|-------------|
-| http://34.76.16.230 | service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get service alimurat-hello-app |
-| http://34.76.16.230/status | service.yaml| /status : Returns “HTTP 204” without any content. | kubectl get service alimurat-hello-app |
-| http://34.107.203.111 | ingress-service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app|
-| http://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTP 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
-| https://34.107.203.111/ | ingress-service.yaml | / : Returns “HTTPS 200” with string “Welcome to my app”” | kubectl get ingress ingress-alimurat-hello-app |
-| https://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTPS 204” without any content. | kubectl get ingress ingress-alimurat-hello-app |
+| http://34.76.16.230 | service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | $ kubectl get service alimurat-hello-app |
+| http://34.76.16.230/status | service.yaml| /status : Returns “HTTP 204” without any content. | $ kubectl get service alimurat-hello-app |
+| http://34.107.203.111 | ingress-service.yaml | / : Returns “HTTP 200” with string “Welcome to my app”” | $ kubectl get ingress ingress-alimurat-hello-app|
+| http://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTP 204” without any content. | $ kubectl get ingress ingress-alimurat-hello-app |
+| https://34.107.203.111/ | ingress-service.yaml | / : Returns “HTTPS 200” with string “Welcome to my app”” | $ kubectl get ingress ingress-alimurat-hello-app |
+| https://34.107.203.111/status | ingress-service.yaml | /status : Returns “HTTPS 204” without any content. | $ kubectl get ingress ingress-alimurat-hello-app |
