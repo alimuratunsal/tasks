@@ -10,7 +10,7 @@ ingress-service.yaml
 service.yaml
 flask_web folder
 ------------------------------------------------------------------------------------------------------
-flask_web folder
+flask_web folder (Task 2) ---------->
 ->Dockerfile
 ->hello.py	flask_web
 ->requirements.txt
