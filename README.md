@@ -1,24 +1,20 @@
 Task 1
 =========
+Task 1 Contains: 
 [task1a.py](https://github.com/alimuratunsal/tasks/blob/master/task1a.py) 
-
-------------------------------------------------------------------------------------------------------
 [task1b](https://github.com/alimuratunsal/tasks/blob/master/task1b)
 ```bash
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
 ```
-------------------------------------------------------------------------------------------------------
 [passwd_file.txt](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
 
 ------------------------------------------------------------------------------------------------------
-
 Task 2
 =========
 Task 2 Contains: 
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) , [fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh), [deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) , [service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml), [ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
 
 ------------------------------------------------------------------------------------------------------
-
 [flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) Contains: 
 -> [Dockerfile](https://github.com/alimuratunsal/tasks/blob/master/flask_web/Dockerfile) 
 -> [hello.py](https://github.com/alimuratunsal/tasks/blob/master/flask_web/hello.py) 
