@@ -1,12 +1,12 @@
 Task 1
 =========
->  [task1a.py](https://github.com/alimuratunsal/tasks/blob/master/task1a.py) 
+[task1a.py](https://github.com/alimuratunsal/tasks/blob/master/task1a.py) 
 
 ------------------------------------------------------------------------------------------------------
 [task1b](https://github.com/alimuratunsal/tasks/blob/master/task1b)
-
+```bash
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
-
+```
 ------------------------------------------------------------------------------------------------------
 [passwd_file](https://github.com/alimuratunsal/tasks/blob/master/passwd_file.txt)
 
@@ -14,12 +14,15 @@ $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
 
 Task 2
 =========
-------------------------------------------------------------------------------------------------------
-fulldeployment.sh
-deployment.yaml	
-ingress-service.yaml	
-service.yaml
-flask_web folder
+[flask_web folder](https://github.com/alimuratunsal/tasks/tree/master/flask_web) 
+
+[fulldeployment.sh](https://github.com/alimuratunsal/tasks/blob/master/fulldeployment.sh) 
+
+[deployment.yaml](https://github.com/alimuratunsal/tasks/blob/master/deployment.yaml) 
+
+[service.yaml](https://github.com/alimuratunsal/tasks/blob/master/service.yaml) 
+
+[ingress-service.yaml	](https://github.com/alimuratunsal/tasks/blob/master/ingress-service.yaml)
 
 ------------------------------------------------------------------------------------------------------
 
