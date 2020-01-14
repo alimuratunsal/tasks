@@ -1,22 +1,27 @@
-Task 1 --->
+Task 1
+------------------------------------------------------------------------------------------------------
 task1a.py	
 task1b
 ```bash
 $ cut -d':' -f2 < passwd_file.txt | sort | uniq -d
 ```
 passwd_file.txt	password file
+
 ------------------------------------------------------------------------------------------------------
-Task 2 --->
+Task 2 
+------------------------------------------------------------------------------------------------------
 fulldeployment.sh
 deployment.yaml	
 ingress-service.yaml	
 service.yaml
 flask_web folder
+
 ------------------------------------------------------------------------------------------------------
 flask_web folder (Task 2) --->
 ->Dockerfile
 ->hello.py	flask_web
 ->requirements.txt
+
 ------------------------------------------------------------------------------------------------------
 Hi!
 In task 2, If you want to fully automatic deployment on k8s cluster, just run fulldeployment.sh after the git clone command.
